@@ -30,3 +30,13 @@ if($post[$db_variable_name]  && ($userPhoto == $w['default_profile_image'] || $u
 		$userPhoto = $post[$db_variable_name];
 	}
 ?>
+
+
+// put this  code in Bootstrap Theme - Member Profile - Contact Page at line 133
+<?php 
+$db_variable_name = 'logo';
+if($user[$db_variable_name]  && ($userPhoto == $w['default_profile_image'] || $userPhoto == $w['default_logo_image']))
+	{
+		$userPhoto = $user[$db_variable_name];
+	}
+  ?>
